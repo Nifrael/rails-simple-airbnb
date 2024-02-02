@@ -1,0 +1,36 @@
+<div class="container mt-3">
+  <h1><%= "Tous les appartements (#{@flats.length})" %></h1>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-md-4">
+        <div class="flat-card">
+          <div class="flat-card-image" style="background-image: url('<%= flat.image %>')"></div>
+          <div class="flat-card-content">
+            <div class="flat-card-title">
+              <h4><%= flat.name %></h4>
+            </div>
+            <p><%= flat.address %></p>
+            <div class="flex-icons">
+              <div class="flex align-items-center">
+                <i class="fa-solid fa-people-line"></i>
+                <%= flat.number_of_guests %>
+              </div>
+              <div class="flex align-items-center ms-3">
+                <i class="fa-solid fa-euro-sign"></i>
+                <%= flat.price_per_night %>
+              </div>
+            </div>
+          </div>
+          <div class="flat-card-actions">
+            <%= link_to "Plus d'infos", flat_path(flat) %>
+            <%= link_to "Modifier", edit_flat_path(flat) %>
+            <%= link_to "Supprimer",
+              flat_path(flat),
+              data: {turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer cet appartement ?"}
+            %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="map" style="background-image: url('<%= @flat.image %>')"></div>
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+     <div class="flat-show-card">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+     </div>
+     <div class="flat-show-card">
+      <h3>A propos de cet appartement</h3>
+      <p><%= @flat.description %></p>
+      <div class="map" style="background-image: url('<%= @flat.image %>')"></div>
+     </div>
+    </div>
+    <div class="col-4">
+      <div class="flat-show-card">
+
+      </div>
+      <div class="flat-show-card">
+        <h3>Détails</h3>
+        <div class="flex">
+          <div class="flex"> <%= @flat.number_of_guests %></div>
+          <div class="flex ms-3"> <%= @flat.price_per_night %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

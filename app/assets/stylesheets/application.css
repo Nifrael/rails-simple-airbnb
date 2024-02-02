@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('components/navbar.css');
+ @import url('components/flats.css');
+
+ .container {
+  margin-top: 20px;
+ }

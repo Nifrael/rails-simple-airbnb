@@ -1,0 +1,46 @@
+.flat-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.263);
+  min-height: 380px;
+}
+
+.flat-card-image {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.flat-card-content {
+  padding: 20px;
+  background-color: #F8F9FA;
+  height: 165px;
+}
+
+.flat-card-content p {
+  min-height: 50px;
+}
+
+.flex-icons {
+  display: flex;
+}
+
+.map {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-card-actions {
+  padding: 5px;
+}
+
+.flat-card-actions a {
+  text-decoration: none;
+  padding: 5px;
+  color: rgba(95, 30, 30, 0.806);
+  font-weight: bold;
+}
