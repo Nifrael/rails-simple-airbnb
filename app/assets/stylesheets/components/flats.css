@@ -17,7 +17,8 @@
 .flat-card-content {
   padding: 20px;
   background-color: #F8F9FA;
-  height: 165px;
+  height: 40%;
+  border-bottom: solid 0.5px rgba(210, 210, 210, 0.539);
 }
 
 .flat-card-content p {
@@ -29,13 +30,15 @@
 }
 
 .map {
-  height: 350px;
+  height: 500px;
   background-position: center;
   background-size: cover;
 }
 
 .flat-card-actions {
-  padding: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flat-card-actions a {
@@ -43,4 +46,32 @@
   padding: 5px;
   color: rgba(95, 30, 30, 0.806);
   font-weight: bold;
+}
+
+.flat-show-card {
+  padding: 5px;
+  background-color: rgba(206, 206, 206, 0.146);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(207, 207, 207, 0.126);
+  box-shadow: 1px 1px rgba(199, 199, 199, 0.247);
+}
+
+.flat-show-card h1, h3 {
+  font-family: 'Lato';
+  color: rgba(61, 1, 1, 0.61);
+  padding: 10px;
+}
+
+.flat-show-card p {
+  padding-left: 10px;
+}
+
+.infos {
+  padding: 10px 40px;
+}
+
+.infos h6 {
+  font-size: 20px;
+  color: rgba(97, 0, 0, 0.411);
 }

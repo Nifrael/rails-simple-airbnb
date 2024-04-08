@@ -14,13 +14,10 @@
     </div>
     <div class="col-4">
       <div class="flat-show-card">
-
-      </div>
-      <div class="flat-show-card">
         <h3>Détails</h3>
         <div class="flex">
-          <div class="flex"> <%= @flat.number_of_guests %></div>
-          <div class="flex ms-3"> <%= @flat.price_per_night %></div>
+          <div class="infos"> <h6><%= @flat.number_of_guests %> <%= @flat.number_of_guests > 1 ? "Personnes" : "Personne" %></h6></div>
+          <div class="infos"> <h6><%= @flat.price_per_night %> €</h6></div>
         </div>
       </div>
     </div>

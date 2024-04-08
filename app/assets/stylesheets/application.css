@@ -17,6 +17,26 @@
  @import url('components/navbar.css');
  @import url('components/flats.css');
 
- .container {
-  margin-top: 20px;
- }
+.container.mt-3 h1 {
+  margin-bottom: 30px;
+  font-family: 'Lato', sans-serif;
+  color: rgba(63, 0, 0, 0.689);
+}
+
+h4 {
+  font-family: 'Lato';
+  color: rgba(61, 1, 1, 0.61);
+}
+
+#site-search {
+  padding: 5px;
+  height: 5%;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+button {
+  border-radius: 10px;
+}
